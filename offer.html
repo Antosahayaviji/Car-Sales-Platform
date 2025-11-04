@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="offer.css">
+    <title>Amount Details</title>
+</head>
+<body>
+    <div class="abc">
+        <span style="font-family: Verdana, Geneva, Tahoma, sans-serif; text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; color: red; font-size: 25px;">Car Sale Price</span> <br>
+     <br> 
+     <img id="carImage" src="BMW.jpg" alt="BMW" onclick="changeImage()"  style="width: 200px; height: 200px; float: left;">
+     Total Price: ₹52.20 Lakh <br><br>
+     Color: White <br><br>
+     Insurance: ₹40,075 <br><br>
+     Individual Registration: ₹99679 <br><br>
+     Showroom price: ₹50.00 Lakh 
+    </div>
+    <br> <br> <br>
+    
+    <!--EMI Calculator-->
+    <div style="height: 200px;" class="abc">
+        Total amount: ₹50,000 <br><br>
+        Interest: 5% <br><br>
+        Monthly payment: 5000 <br><br>
+        Total months: 25 
+    </div>
+
+
+    <!-- 
+    <div class="calculator">
+        <h1>EMI Calculation</h1>
+        <p>Amount (₹)   :
+            <input id="amount" type="number" onchange="Calculate()">
+        </p>
+        <p>
+            Interest Rate   :
+            <input id="rate" type="number" onchange="Calculate()">
+        </p>
+        <p>Months to Pay   :
+            <input id="months" type="number" onchange="Calculate()">
+        </p>
+        <h2 id="total"></h2>
+    </div>
+-->
+<!--Pagination button-->
+    <div class="pagination-container" role="navigation" aria-label="Job results navigation">
+        <button class="page-btn" id="prev-btn" aria-label="Previous page"> <a style="text-decoration: none; color: black;" href="dealer.html"> ◀ Main Page </a></button>
+
+    <script src="offer.js"></script>
+</body>
+</html>

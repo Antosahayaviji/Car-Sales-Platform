@@ -1,0 +1,87 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-image: url("service\ bg.webp");
+    background-size: 1950px 1000px;
+}
+ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: none;
+}
+ol  li {
+    float: left;
+}
+ol li a{
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+ol li a:hover {
+    background-color: bisque;
+    color: black;
+}
+.rounded-pill {
+    float:inline-start;
+    width: 60px;
+    height: 45px;
+    background-color: chocolate;
+}
+
+/* form */
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+.container {
+  border-radius: 5px;
+  /* background-color: #f2f2f2; */
+  padding: 10px;
+}
+.column {
+    margin-left: 500px;
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+@media screen and (max-width:  600px) {
+    .column, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+.img {
+    margin: auto;
+    
+}
+.form {
+    text-align: center;
+}

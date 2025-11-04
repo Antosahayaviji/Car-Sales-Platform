@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="img1.css">
+    <title>🚘Car 1</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+    
+    
+</head>
+<body>
+
+
+    <!--Flex Property-->
+    <div class="container">
+        <!--Energy-->
+        <div>
+            <span style="text-align: center; font-size: 20px;">Energy</span> <br> <br>
+            <canvas id="myChart" style="width: 100%; max-width: 600px"></canvas>
+        </div>
+
+<!--Range-->
+        <div>
+            <span style="text-align: center; font-size: 20px;">Range</span> <br> <br>
+            <canvas id="Chart" style="width:100%;max-width:600px"></canvas>
+        </div>
+
+        <!--Break Fluids-->
+        <div>
+            <span style="text-align: center; font-size: 20px;">Break Fluid</span> <br> <br>
+            <canvas id="isChart" style="width:100%;max-width:600px"></canvas>
+        </div>
+
+        <!--Tire-->
+
+        <div>
+            <span style="text-align: center; font-size: 20px;"> Tier Quality</span>
+            <canvas id="hiChart" style="width: 100%; max-width: 600px;"></canvas>
+        </div>
+
+        <!--Car Statics-->
+        <div style="margin-left: 650px;">
+            <span style="text-align: center; font-size: 20px;">Car Statics</span>
+            <canvas id="myyyChart" style="width:100%;max-width:600px"></canvas>
+
+        </div>
+    </div>
+    <br>
+
+   <button id="detectLocationBtn">Detect my Location</button>
+<p id="locationError"></p>
+<div id="carDetailsBox" style="display: none; border: 1px solid black; padding: 10px; margin-top: 10px;">
+    <h3 style="text-align: center;">Show Car Details</h3>
+    <button type="button"> <a style="text-decoration: none;" href="offer.html"> Click to view car details</a></button>
+    
+</div>
+
+
+
+
+    <script src="img1.js"></script>
+</body>
+</html>

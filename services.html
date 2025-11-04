@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="services.css">
+    <title>Service</title>
+</head>
+<body>
+    <ol>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid">
+                <img src="logo.jpg" class="rounded-pill">
+                
+    <li><a href="main.html">🏠 Home</a></li>
+    <li><a href="dealer.html">🚗 Car Dealers</a></li>
+    <li><a href="services.html">📱 Booking</a></li>
+    
+</ol>
+ </div>
+    </nav>
+    <h1 style="text-align: center;  color:navy;">Book Your Car Services Here...</h1> 
+
+ <div class="container">
+        <div style="text-align: center;">
+            <h2 style="color: darkmagenta; text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; font-size: 30px;">Contact Us</h2>
+            
+        </div>
+        
+        <div class="row">
+        <div class="column">
+
+            
+            
+
+
+
+            
+            <form class="form" id="contactForm">
+                <label for="fname">Full Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your full name...">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="Your email...">
+                <label for="text">Phone Number</label>
+                <input type="text" id="text" name="text" placeholder="Enter your phone number...">
+                <label for="district">District</label>
+                 <select id="district" name="district">
+          <option value="tenkasi">Tenkasi</option>
+          <option value="kannyakumari">Kannyakumari</option>
+          <option value="erode">Erode</option>
+          <option value="sivagangai">Sivagangai</option>
+          <option value="coimbatore">Coimbatore</option>
+          <option value="cuddalore">Cuddalore</option>
+          <option value="ranipet">Ranipet</option>
+          <option value="viluppuram">Viluppuram</option>
+          <option value="pudukkottai">Pudukkottai</option>
+          <option value="tiruchirappalli">Tiruchirappalli</option>
+          <option value="thoothukudi">Thoothukudi</option>
+          <option value="chennai">Chennai</option>
+          <option value="tiruppur">Tiruppur</option>
+          <option value="nilgiris">Nilgiris</option>
+        </select>
+<label for="intrested">Type of Car</label>
+<select id="intrested" name="intrested">
+    <option value="BMW">BMW</option>
+    <option value="Audi">Audi</option>
+    <option value="Tata">Tata</option>
+    <option value="Mahindra">Mahindra</option>
+    <option value="Hyndai">Hyndai</option>
+    <option value="Kia">Kia</option>
+    <option value="Mercedes">Mercedes</option>
+    <option value="Volvo">Volvo</option>
+
+</select>
+<label for="msg">Your message</label>
+        <textarea id="msg" name="subject" placeholder="Your message here..." style="height:170px"></textarea>
+        <div class="form-actions">
+            <button type="submit">Submit</button>
+            <button type="button" id="clearDraft">Clear Draft</button>
+            <button type="button" id="showSubmittedBtn">Submitted Forms</button>
+        </div>
+        <div id="formStatus" aria-live="polite" style="margin-top:8px;color:#333;font-size:0.95rem"></div>
+
+            </form>
+        </div>
+</div>
+    </div>
+        <section id="submissionsSection" class="submissions" style="max-width:900px;margin:20px auto;padding:12px;">
+        <h3>Previous Submissions</h3>
+        <div class="sub-controls" style="margin-bottom:8px;">
+            <button id="toggleSubmissions">Hide</button>
+            <button id="clearSubmissions">Clear All Submissions</button>
+        </div>
+        <div id="submissionsList" aria-live="polite"></div>
+    </section>
+        
+
+    <script src="services.js"></script>
+</body>
+</html>
